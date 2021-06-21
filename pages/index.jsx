@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -19,6 +20,9 @@ export default function Home() {
         laudantium veniam cupiditate placeat ut, impedit at fugiat obcaecati
         neque? Illum!
       </p>
+      <Link href="/ninjas">
+        <a>See Ninjs Listing</a>
+      </Link>
       <Footer />
     </div>
   );
