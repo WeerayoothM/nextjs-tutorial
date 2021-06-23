@@ -5,7 +5,6 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div>
-      <Navbar />
       <h1>HomePage</h1>
 
       <p>
@@ -23,7 +22,6 @@ export default function Home() {
       <Link href="/ninjas">
         <a>See Ninjs Listing</a>
       </Link>
-      <Footer />
     </div>
   );
 }
