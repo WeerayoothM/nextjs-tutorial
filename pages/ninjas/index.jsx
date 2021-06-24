@@ -1,5 +1,5 @@
-import Head from "next/Head";
-import Link from "next/Link";
+import Head from "next/head";
+import Link from "next/link";
 import styles from "../../styles/Ninjas.module.css";
 
 // this function runs at build time as our app is built and our components rendered
