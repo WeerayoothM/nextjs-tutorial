@@ -1,10 +1,12 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const Navbar = () => {
   return (
     <nav>
       <div className="logo">
-        <h1>Ninja List</h1>
+        {/* Image from next is automatically lazily load */}
+        <Image src="/logo.png" alt="Logo" width={126} height={77} />
       </div>
       {/*//? Linking between pages we don't have the anchor tag, use something else instead */}
       <Link href="/">
