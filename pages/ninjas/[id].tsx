@@ -1,4 +1,6 @@
-export const getStaticPaths = async () => {
+import { GetStaticPaths, GetStaticProps } from "next";
+
+export const getStaticPaths :GetStaticPaths = async () => {
   const res = await fetch("https://jsonplaceholder.typicode.com/users");
   const data = await res.json();
 
@@ -15,7 +17,7 @@ export const getStaticPaths = async () => {
 };
 
 //  we run this function ten times because we have 10 items
-export const getStaticProps = async (context) => {
+export const getStaticProps : GetStaticProps = async (context) => {
   const id = context.params.id;
   const res = await fetch(`https://jsonplaceholder.typicode.com/users/${id}`);
   const data = await res.json();
